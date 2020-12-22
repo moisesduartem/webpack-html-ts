@@ -1,0 +1,65 @@
+:root {
+  --primary: rgb(64, 140, 255);
+  --dark: #313131;
+  --light: #ececec;
+  --white: #f5f5f5;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--dark);
+  background-color: var(--light);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#app h1 {
+  font-weight: 200;
+}
+
+#app button {
+  margin: 20px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: var(--primary);
+  box-shadow: 1px 2px 5px 0 #0000003d;
+  transition: all .3s ease-in;
+  opacity: 0.7;
+}
+
+#app button:hover {
+  opacity: 1.0;
+  background-color: var(--primary);
+  transition: all .3s ease-out;
+}
+
+#app a {
+  text-decoration: none;
+}
+
+#app a small {
+  color: var(--primary);
+  opacity: 0.6;
+  transition: all .3s ease-in;
+}
+
+#app a small:hover {
+  transition: all .3s ease-out;
+  opacity: 1.0;
+}
